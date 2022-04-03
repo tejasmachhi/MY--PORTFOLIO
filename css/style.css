@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 0%;
+  padding: 0%;
+  background-color: #f2f2f2;
+}
+
+.main {
+  overflow: hidden;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  background: rgba(14, 35, 70, 0.801);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  height: 75px;
+}
+
+.logo {
+  margin-left: 38px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+li.nav-link {
+  border: 1px solid rgba(255, 255, 255, 0.952);
+  float: left;
+  list-style: none;
+  padding: 29px 27px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+nav li:hover {
+  color: rgb(255, 253, 253);
+  background-color: rgb(110 165 248);
+}
+
+.banner-section {
+  background-image: url(1947484.webp);
+  background-size: cover;
+  height: 88vh;
+  display: flex;
+  width: 100%;
+  background-color: rgb(110, 165, 248);
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+  font-family: "Quicksand", sans-serif;
+}
+
+.content {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #f2f2f2;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.first-hr {
+  height: 5px;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.portfolio-section {
+  background-image: url(dark.jpg);
+  background-size: cover;
+  padding-top: 15px;
+  height: 80vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+  font-family: "Quicksand", sans-serif;
+}
+
+.head-line {
+  border: 1px solid #f2f2f2;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.work-list {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.work {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  height: 100px;
+  width: 300px;
+  border: 1px solid #f2f2f2;
+}
+
+.work:hover {
+  transition: 0.5s;
+  border: 1px solid #f5f1f1;
+  background-color: #2f2f2f91;
+}
+
+.about-section {
+  background: rgba(14, 35, 70, 0.801);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  flex-direction: column;
+  align-content: center;
+}
+
+.about-img {
+  border: 5px solid #ffffff;
+  height: 100%;
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.about-img img {
+  height: 1000%;
+  width: 100%;
+}
+.about-img:hover {
+  background-color: #2f2f2f9c;
+}
+
+.skill li {
+  list-style: circle;
+  margin: 10px;
+  padding: 10px;
+}
+
+footer {
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  height: auto;
+  height: auto;
+  background-color: black;
+}
+
+.foot-head {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-button {
+  /* -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0); */
+  color: #697082;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2em;
+  border: 2px solid #697082;
+  border-radius: 4px;
+  padding: 20px 65px;
+  transition: 0.3s ease-in-out;
+}
+.contact-button > span {
+  text-transform: none;
+  position: absolute;
+  color: white;
+  top: 20px;
+  left: 12px;
+  opacity: 0;
+  transition: all 0s ease 0s;
+}
+
+.contact-button:hover {
+  transition: 0.3s ease-in-out;
+  border: 2px solid #697082;
+  border-radius: 50px;
+  background-color: #697082;
+  color: #697082;
+}
+.contact-button:hover > span {
+  opacity: 1;
+  transition: all 0.25s ease-in-out 0.1s;
+  font-size: 14px;
+}
+.contact-button:before,
+contact-button:after {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -12px;
+  width: 132px;
+  height: 25px;
+}
+
+/* Social buttons at bottom of apge - different from "contact button" */
+.contact-buttons {
+  height: auto;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.social {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1.5px solid #f7f6f8;
+  border-radius: 28%;
+  margin-right: 1em;
+}
+
+/* Specific colors for each button */
+.github-social {
+  color: #dad4e0;
+}
+.insta-social {
+  color: #f1417ce5;
+}
+.fcc-social {
+  color: #5b3dad;
+}
+.whatsapp-social {
+  color: #14e650;
+}
+.linkedin-social {
+  color: #007bb5;
+}
+.medium-social {
+  color: #3cb371;
+}
+/* Change specific colors on :hover */
+.contact-buttons > a {
+  transition: all 0.5s;
+}
+.contact-buttons > a:hover,
+.contact-buttons > a:focus {
+  border: none;
+}
+.contact-buttons > a.github-social:hover,
+.contact-buttons > a.github-social:focus {
+  color: white;
+  background-color: #272628;
+}
+.contact-buttons > a.insta-social:hover,
+.contact-buttons > a.insta-social:focus {
+  color: rgb(255, 255, 255);
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.contact-buttons > a.fcc-social:hover,
+.contact-buttons > a.fcc-social:focus {
+  color: white;
+  background-color: #15233d;
+}
+.contact-buttons > a.whatsapp-social:hover,
+.contact-buttons > a.whatsapp-social:focus {
+  color: rgb(247, 249, 248);
+  background-color: #4cca5a;
+}
+.contact-buttons > a.linkedin-social:hover,
+.contact-buttons > a.linkedin-social:focus {
+  color: white;
+  background-color: #007bb5;
+}
+.contact-buttons > a.medium-social:hover,
+.contact-buttons > a.medium-social:focus {
+  color: white;
+  background-color: #3cb371;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  .content {
+    font-size: 1.2rem;
+  }
+  header {
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    background: rgba(14, 35, 70, 0.801);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-section {
+    background-image: url(1947484.webp);
+    background-size: cover;
+    background-position: center;
+    height: 52vh;
+    background-size: cover;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  li.nav-link {
+    font-size: 22px;
+    list-style: none;
+    padding: 31px 379px;
+  }
+
+  ul {
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-section {
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    background-color: #040404;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-buttons {
+    display: flex;
+    padding: 13px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  i.fa.fa-code {
+    font-size: large;
+  }
+
+  .social {
+    margin: 10px;
+    padding: 11px;
+    display: inline-block;
+    width: 46px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1.5px solid rgb(247, 246, 248);
+    border-radius: 69%;
+    margin-right: 1em;
+  }
+}

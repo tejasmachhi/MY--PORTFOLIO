@@ -1,0 +1,130 @@
+@import "bourbon";
+
+//Fonts
+@import url(https://fonts.googleapis.com/css?family=Damion);
+$font-curse: "Damion", cursive;
+
+//Colors
+$color-teal: #00897b;
+$color-pea: #004d40;
+$color-snow: #fff;
+
+body {
+  background: $color-teal;
+}
+.delayone {
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+.delaytwo {
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+.delaythree {
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+.delayfour {
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+}
+.delayfive {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+.delaysix {
+  -moz-animation-delay: 1.4s;
+  -webkit-animation-delay: 1.4s;
+}
+h1 {
+  font-family: $font-curse;
+  color: $color-snow;
+  font-size: 6em;
+  text-align: center;
+  margin-top: 0;
+}
+.icon {
+  position: absolute;
+  width: 100%;
+  margin-top: 30%;
+  display: block;
+  color: $color-pea;
+  font-size: 3em;
+  @include transition(all 0.2s $ease-out-circ);
+}
+#circ {
+  max-width: 100%;
+  min-height: 200px;
+  width: 1280px;
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 80px;
+    width: 100%;
+    li {
+      display: inline-block;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 120px;
+      height: 120px;
+      margin: 0 20px 20px 20px;
+      text-align: center;
+      background: $color-snow;
+      border: solid 8px $color-teal;
+      position: relative;
+      @include transition(all 0.4s);
+      &:hover {
+        border: solid 8px $color-pea;
+        @include transition(all 0.4s);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 1200px) {
+  h1 {
+    font-size: 4em;
+  }
+  .icon {
+    position: relative;
+    margin-top: 30%;
+    color: $color-pea;
+    font-size: 2em;
+    @include transition(all 0.2s $ease-in-out-cubic);
+  }
+  #circ {
+    ul {
+      li {
+        width: 80px;
+        height: 80px;
+        margin: 0 5px 5px 5px;
+        &:hover {
+          .icon {
+            font-size: 2.5em;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and(max-width: 690px) {
+  h1 {
+    font-size: 2em;
+  }
+  #circ {
+    ul {
+      li {
+        border-radius: 0;
+        border: none;
+        margin: 0;
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+}
